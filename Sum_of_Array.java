@@ -1,20 +1,20 @@
-import java.util.*;
-public class Solution
+import java.util.Scanner;
+public class Main
 {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int[] intArray = new int[n];
+        int[] arr=new int[n];
+        int count=0;
         for(int i=0;i<n;i++)
         {
-            intArray[i] = sc.nextInt();
+            arr[i]=sc.nextInt();
         }
-        int sum=0;
-        for(int eachElement : intArray)
+        for(int i=0;i<n;i++)
         {
-            sum += eachElement;
+            count+=arr[i];
         }
-        System.out.println(sum);
+        System.out.print(count);
     }
 }
